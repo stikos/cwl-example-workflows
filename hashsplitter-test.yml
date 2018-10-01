@@ -1,0 +1,3 @@
+input:
+  class: File
+  path: ftp://ftp-private.ebi.ac.uk/upload/foivos/test.txt
