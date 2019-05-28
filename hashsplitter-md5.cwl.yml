@@ -11,8 +11,8 @@ hints:
   
   - class: ResourceRequirement
     coresMin: 1
-    ramMin: 2
-    outdirMin: 1
+    ramMin: 20
+    outdirMin: 100
 
 inputs:
   - id: input
