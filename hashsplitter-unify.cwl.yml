@@ -8,9 +8,9 @@ doc: "unify hashed values into a single output"
 
 hints:
   DockerRequirement:
-    dockerPull: frolvlad/alpine-bash
+    dockerPull: frolvlad/alpine-bash@sha256:56604451924532bbf5e600107ac75ef8fe87827aade79cd2d58c81bacb5f9029
 
-inputs:  
+inputs:
   md5:
     type: File
     inputBinding:

@@ -7,8 +7,8 @@ doc: "hash input through md5"
 
 hints:
   - class: DockerRequirement
-    dockerPull: kubler/openssl
-  
+    dockerPull: kubler/openssl:20190330
+
   - class: ResourceRequirement
     coresMin: 1
     ramMin: 20
