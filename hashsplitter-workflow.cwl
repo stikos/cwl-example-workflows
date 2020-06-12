@@ -12,7 +12,7 @@ inputs:
 outputs:
   - id: output
     type: File
-    outputSource: unify/output
+    outputSource: unify-once-again/output
 
 steps:
   - id: md5
