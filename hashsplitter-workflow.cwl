@@ -22,7 +22,7 @@ steps:
     out:
       - { id: output }
 
-  - id: sha-test
+  - id: sha
     run: hashsplitter-sha.cwl.yml
     in:
       - { id: input, source: input }
@@ -40,7 +40,7 @@ steps:
     run: hashsplitter-unify.cwl.yml
     in:
       - { id: md5, source: md5/output }
-      - { id: sha-test, source: sha-test/output }
+      - { id: sha, source: sha/output }
       - { id: whirlpool, source: whirlpool/output }
     out:
       - { id: output }
