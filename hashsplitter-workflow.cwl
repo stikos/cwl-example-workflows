@@ -41,6 +41,6 @@ steps:
     in:
       - { id: md5, source: md5/output }
       - { id: sha, source: sha/output }
-      - { id: whirlpool, source: whirlpool/output }
+      - { id: whirlpool-testhyphen, source: whirlpool-testhyphen/output }
     out:
       - { id: output }
