@@ -22,14 +22,14 @@ steps:
     out:
       - { id: output }
 
-  - id: sha
+  - id: sha-test
     run: hashsplitter-sha.cwl.yml
     in:
       - { id: input, source: input }
     out:
       - { id: output }
 
-  - id: whirlpool-testhyphen
+  - id: whirlpool
     run: hashsplitter-whirlpool.cwl.yml
     in:
       - { id: input, source: input }
@@ -40,7 +40,7 @@ steps:
     run: hashsplitter-unify.cwl.yml
     in:
       - { id: md5, source: md5/output }
-      - { id: sha, source: sha/output }
-      - { id: whirlpool-testhyphen, source: whirlpool-testhyphen/output }
+      - { id: sha-test, source: sha-test/output }
+      - { id: whirlpool, source: whirlpool/output }
     out:
       - { id: output }
