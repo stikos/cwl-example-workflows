@@ -12,7 +12,7 @@ inputs:
 outputs:
   - id: output
     type: File
-    outputSource: unify_once_again/output
+    outputSource: unify-once-again/output
 
 steps:
   - id: md5
@@ -36,7 +36,7 @@ steps:
     out:
       - { id: output }
 
-  - id: unify_once_again
+  - id: unify-once-again
     run: hashsplitter-unify.cwl.yml
     in:
       - { id: md5, source: md5/output }
