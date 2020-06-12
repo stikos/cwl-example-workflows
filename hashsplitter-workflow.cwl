@@ -29,14 +29,14 @@ steps:
     out:
       - { id: output }
 
-  - id: whirlpool
+  - id: whirlpool-testhyphen
     run: hashsplitter-whirlpool.cwl.yml
     in:
       - { id: input, source: input }
     out:
       - { id: output }
 
-  - id: unify
+  - id: unify-once-again
     run: hashsplitter-unify.cwl.yml
     in:
       - { id: md5, source: md5/output }
